@@ -15,7 +15,7 @@ This project involves designing and implementing a maze solving and object place
 2. The readings from all five sensors are processed to determine the position of the line relative to the robot.
 3. A PID control algorithm computes the required corrections in motor speed to keep the robot centered on the line by adjusting their PWM.
 4. The motor driver receives the control signals and adjusts the speed of the motors accordingly.
-
+5. For turns, the direction is determined by recording the previous 15 LSA values.
 ## PID Control Algorithm
 The PID control system helps in minimizing oscillations and improving tracking accuracy. The formula used is:
 
